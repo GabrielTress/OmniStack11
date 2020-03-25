@@ -1,0 +1,104 @@
+Certificado ao final do curso.
+
+Instalação do ***** nodeJS ******* atraves de um gerenciador de pacotes
+Chocolatey
+ Comandos via powershell
+		Get-ExecutionPolicy(restricted)
+		Set-ExecutionPolicy AllSigned
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+choco install nodejs-lts
+
+ainda no power shell,
+	comando npm init -y    -- cria package json
+
+	powershell
+		npm install express (framework de rotas)
+
+
+npm + nome arquivo para executar mudança  
+
+
+**** REACT *******
+
+npx create-react-app frontend
+
+npm start
+
+Instalação do Expo no Celular, com todas as bibliotecas disponiveis.
+	Faz a conversão do codigo para o app.
+********************************************************
+
+rotas 
+	GET : Busca uma informação do back-end
+	POST : Cria uma informação no back-end
+	PUT: Alterar uma informação no back-end
+	DELETE : Deletar uma informação no back-end
+
+Download Insomnia
+	Utilizadp para testes de rotas durante o desenvolvimento.
+
+Parametros da rota;
+	Query Params: Paramentros nomeados enviados na rota após "?" (Filtros, paginação).
+	Route Params: Paramentros utilizados para identificar recursos (/users/id)
+	Request body: Corpo da requisição, utilizado para criar ou alterar recursos.
+
+Instalação NODEMON
+	npm install nodemon -D
+Para não ter que ficar reiniciando o node a cada atualização de código.
+	Em package.json _ Alterar script "test" para "start", com o comando "nodemon "arquivo.js""
+	para executar "npm start"
+
+
+******************************
+Banco de dados
+
+SQLite.
+
+Ao inves do drives SQL, sera utilizado o queryBuilder: table('users').select('*').where(....)
+
+Para instalar.
+
+npm install knex
+npm install sqlite3
+
+Conexão com db : npx knex init
+
+ficar atento a diretorios do banco de dados, migrations
+	criar diretorio de migrations dentro de database
+
+
+Em knexfile adicionar
+	    migrations: {
+      		directory: './src/database/migrations'
+    	   }
+
+Para criar a migration
+	npx knex migrate:make create_ong
+
+criar a tabela.
+exe a migration
+ npx knex migrate:latest
+
+-----
+segurança
+
+npm install cors
+ define quem pode acessar minha API
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
