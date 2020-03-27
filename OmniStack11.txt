@@ -87,6 +87,26 @@ segurança
 npm install cors
  define quem pode acessar minha API
 
+*****************
+DOWNLOAD git-scm
+
+===============================
+
+Configuração de rotas na interface
+
+npm install react-router-dom
+
+
+Conexão react com nodeJS (frontend com backend)
+	cliete http (responsavel por fazer as chamadas e obter respostas)
+
+no frontend
+npm install axios
+
+
+
+
+
 
 
 
