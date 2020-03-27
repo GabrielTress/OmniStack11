@@ -28,15 +28,21 @@ export default function Register(){
             uf
         };
 
-        try{
-            const response = await api.post('ongs', data); //chama a API, com metodo post de envio (passando os dados)
+        if(data.name && data.email && data.whatsapp && data.city && data.uf !== ""){
 
-            alert(`Seu ID de acesso: ${response.data.id}`); // informando ID atraves do alert
+            try{
+                const response = await api.post('ongs', data); //chama a API, com metodo post de envio (passando os dados)
 
-            history.push('/'); // caso cadastro OK, sera redirecionado para pagina inicial
+                alert(`Seu ID de acesso: ${response.data.id}`); // informando ID atraves do alert
 
-        }catch(err){
-            alert('Erro no cadastro, tente novamente');
+                history.push('/'); // caso cadastro OK, sera redirecionado para pagina inicial
+
+            }catch(err){    
+                alert('Erro no cadastro, tente novamente');
+        }
+
+        } else {
+              alert('Todos os campos precisam ser preenchidos');
         }
 
     }
