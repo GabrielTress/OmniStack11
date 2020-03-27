@@ -103,6 +103,44 @@ Conexão react com nodeJS (frontend com backend)
 no frontend
 npm install axios
 
+criar pasta services/api
+
+===============================
+
+mobile
+
+instalção do expo
+
+npm install -g expo-cli
+
+expo init mobile
+
+
+desativa o antivirus
+
+//Entre no seu diretorio
+cd Users\jhony\Documents\www\semanaomnistack11\aulas
+
+//limpa 
+npm cache clean --force
+
+//Escolha a opção [S]
+Set-ExecutionPolicy Unrestricted
+
+//instale o EXPO
+npm install -g expo-cli 
+
+ps, pelo menos foi isso que deu certo no final 
+
+tbm pode tentar so executar antes do EXPO
+ 
+//Escolha a opção [S]
+Set-ExecutionPolicy Unrestricted
+
+/instale o EXPO
+npm install -g expo-cli
+
+
 
 
 

@@ -42,7 +42,7 @@ export default function Logon(){
 
                 <input 
                     placeholder="Sua ID"
-                    value = {id}
+                    value = {id}   //utilizado somente em formularios. Com o react "useState"
                     onChange={e => setId(e.target.value)}
                 />
 
