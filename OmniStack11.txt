@@ -111,34 +111,82 @@ mobile
 
 instalção do expo
 
-npm install -g expo-cli
+npm install -g expo-cli --force (utilizado o force, pq não estava dando certo sem).
 
 expo init mobile
 
+-- comentario
+	desativa o antivirus
 
-desativa o antivirus
+	//Entre no seu diretorio
+	cd Users\jhony\Documents\www\semanaomnistack11\aulas
 
-//Entre no seu diretorio
-cd Users\jhony\Documents\www\semanaomnistack11\aulas
+	//limpa 
+	npm cache clean --force
 
-//limpa 
-npm cache clean --force
+	//Escolha a opção [S]
+	Set-ExecutionPolicy Unrestricted
 
-//Escolha a opção [S]
-Set-ExecutionPolicy Unrestricted
+	//instale o EXPO
+	npm install -g expo-cli 
 
-//instale o EXPO
-npm install -g expo-cli 
+	ps, pelo menos foi isso que deu certo no final 
 
-ps, pelo menos foi isso que deu certo no final 
-
-tbm pode tentar so executar antes do EXPO
+	tbm pode tentar so executar antes do EXPO
  
-//Escolha a opção [S]
-Set-ExecutionPolicy Unrestricted
+	//Escolha a opção [S]
+	Set-ExecutionPolicy Unrestricted
 
-/instale o EXPO
-npm install -g expo-cli
+	/instale o EXPO
+	npm install -g expo-cli
+
+
+para startar o projeto
+	npm start
+
+ira se gerado um QRCode (que sera lido dentro do APP Expo no celular).
+	Tbm pode ser acessado por emuladores android e ios
+	Ou pelo expo snack que é totalemente web
+
+instalação do pacote de navegação
+	npm install @react-navigation/native (--force)
+
+fazer a instalação do restante dos pacotes
+	expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+MAIS INFORMAÇÕES SOBRE FORMAS DE NAVEGAÇÃO EM REACTNAVIGATION.ORG
+
+sera utilizado o formato de navegação stack
+	npm install @react-navigation/stack
+
+biblioteca adicinal
+	expo install expo-constants
+
+
+contato
+
+instalar dependecia email
+	expo install expo-mail-composer
+
+
+fazer a instalacao do axios
+	reponsavel por fazer as chamadas http
+npm install axios
+
+criação de services/api
+
+npm install intl (vai ser instalada onde não existir) no caso para formatar o valor em reais tanto no android com no IOS
+
+
+
+
+
+
+
+
+
+
+
 
 
 
