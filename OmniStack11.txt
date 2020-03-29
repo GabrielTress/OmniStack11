@@ -168,7 +168,7 @@ contato
 instalar dependecia email
 	expo install expo-mail-composer
 
-
+sss
 fazer a instalacao do axios
 	reponsavel por fazer as chamadas http
 npm install axios
@@ -176,6 +176,36 @@ npm install axios
 criação de services/api
 
 npm install intl (vai ser instalada onde não existir) no caso para formatar o valor em reais tanto no android com no IOS
+
+
+--------------
+instalação do pacote celebrate (para autenticação)
+	npm install celebrate 
+deve ser confugurado nas rotas
+
+
+
+framework de teste
+	npm install jest
+	para executar (npx jest --init)
+
+modelo de teste em (test/unit)
+
+para executar o teste : npm test
+
+
+
+
+hostedaem
+deploy (apenas o node)
+	HEROKU
+apenas para teste
+
+Hospedagem DigitalOcean (backend)
+Hospedagem Netlify (frontend)
+
+
+
 
 
 
